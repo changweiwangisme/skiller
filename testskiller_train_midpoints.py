@@ -24,7 +24,7 @@ criterion = torch.nn.MSELoss()
 optimizer = torch.optim.SGD(mymodel.parameters(), lr=0.01)
 
 # load data
-theskiller.load_traindata("mldata_circle_noise5.txt",10,6,mymodel)
+theskiller.load_traindata("mdata_circle_noise5.txt",10,6,mymodel)
 #theskiller.load_traindata_multiple("datafile",4,10,6,mymodel)
 
 # train
