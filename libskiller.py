@@ -285,9 +285,10 @@ def predict_loop(dataloader, model, seq_len):
     
 
 # the function to predict a sequence from given start sequence, the start sequence are stored within a file 
-# path:         start sequence file path
-# model:        the network model
-# seq_len:      the sequence length that will be predicted 
+# path:             start sequence file path
+# path_predicted:   predicted sequence file save path
+# model:            the network model
+# seq_len:          the sequence length that will be predicted 
 def predict_output(path, path_predicted, model, seq_len):
     SEGMENT_N = model.SEGMENT_N
     POINT_K = model.POINT_K
